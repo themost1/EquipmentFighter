@@ -1,0 +1,56 @@
+Setup:
+	Each player begins with a tree and a bank (indestructible units producing 1 food/gold respectively)
+	Deal out 3 unit cards and 2 equipment cards to the starting player
+
+
+Turn:
+	At the start of your turn, draw a card
+	Then, activate all (every turn) abilities
+	After this point, you may buy cards from your hand for their cost
+	At any point during your buy phase, you may declare an attack, each unit may only attack once
+	Once you decide to end your turn, pass your hand to the player on your left. It is now their turn
+
+
+Drawing a card:
+	When told to draw a card, you may choose whether to draw from the equipment or unit decks
+
+
+Units:
+	A unit corresponds to a played unit card, along with all attached equipment
+	The abilities of a unit are the abilities on the base unit card as well as the abilities of all attached equipment
+	For example, a unit with (every turn) +1 food holding a tool with (every turn) +1 gold would gain 1 food and 1 gold onto the unit every turn
+
+
+Every turn abilities:
+	Most every turn abilities say +X food/gold/diamond
+		To perform this action, take X food/gold/diamond tokens from the supply and place them on the unit who activated the ability
+
+
+Buying cards:
+	Spend resources from any of your units to buy a card from your hand
+	If the card is a unit, then place it along with your other units, leaving space for equipment
+	If the card is an equipment, then place it next to a unit with a slot for the color of equipment
+		For example, if you have a unit whose right side is red (for weapon), then when buying a red weapon card you may place it to the right of that unit
+	Note that if a unit has a an equipment along one side, then no further equipment may be placed on that side
+	Some equipment may have slots for further equipment, these create valid slots for equipment of that type to be placed, and the equipment will apply to the base unit
+	You may not purchase equipment for which you do not have any valid placement options
+
+
+Attacking:
+	To make an attack, first declare an attacker unit and a defender unit
+		You must control the attacker unit and you must not control the defender unit
+		You can only declare a unit as an attacker if it contains a red attack row on either the base unit or one of its equipment
+		Unless otherwise stated, each unit may only attack once each turn
+	Next, mark the attacker (we should figure this out)
+	The attacking player sums the total attack points appearing on the attacking unit either on the base unit or an equipment (or stemming from global effects). These will be denoted as the attack points
+	The defending player sums the total defense points appearing on the defending unit either on the base unit or an equipment (or stemming from global effects). These will be denoted as the defense points
+	Then, the players controlling the attacking and defending units each roll a die. The attacking player adds the value of the rolled die to their unit's attack points. The defending player adds the value of the rolled die to their unit's defense points.
+	Whichever unit has higher attack/defense points after the rolls are added will be the winner of the fight
+	If the attacking unit wins the fight, move all resources from the defending unit to the attacking unit, and then trigger all "On Victory" clauses of the attacking unit
+	If the defending unit wins the fight, nothing happens
+
+
+Game end/victory points:
+	The victory points controlled by a player is equivalent to the total sum of +VP symbols on all units or equipment they control, added to the total number of diamond resources on units they control
+	Note that diamond resources can be stolen through attacking!
+	The game ends when a player ends their turn with at least 10 victory points. That player is the winner
